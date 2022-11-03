@@ -1,0 +1,17 @@
+p,strong{
+    font-size: 18px;
+    font-weight: 700;
+}
+h2{
+    font-weight: 700;
+    line-height: 1.1875;
+    letter-spacing: -.3px;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}

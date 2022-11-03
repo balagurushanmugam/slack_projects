@@ -1,0 +1,491 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="../css/home.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/initial.css" /> -->
+    <link rel="stylesheet" href="../css/css.css" />
+    <style>
+        body {
+            background: #f4ede4;
+        }
+
+        .parent {
+            width: 100%;
+            background: #541554;
+            display: flex;
+            height: 82vh;
+        }
+
+        .child1 {
+            width: 50%;
+        }
+
+        .child2 {
+            width: 50%;
+        }
+
+        .child2 img {
+            margin-left: 80px;
+            margin-top: 50px;
+            width: 88%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 64px;
+            margin-top: 60px;
+            margin-bottom: -3px;
+            font-weight: 700;
+            line-height: 1.0625;
+            letter-spacing: -1.5px;
+            margin-left: 55px;
+            text-align: initial;
+        }
+
+        .child1 p {
+            margin-left: 55px;
+            font-size: xx-large;
+        }
+
+        .child1 strong {
+            font-size: 30px;
+        }
+
+        strong {
+            color: #ecb22e;
+
+        }
+
+        .button1 {
+            padding: 14px 25px;
+            padding-bottom: 18px;
+            border: 0px solid black;
+            border-radius: 10px;
+            border-width: 2px;
+            color: #611f69;
+            margin-left: 50px;
+            text-align: center;
+            font-size: medium;
+            padding-top: 18px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            padding: 14px 25px;
+            padding-bottom: 18px;
+            border: 0px solid black;
+            border-radius: 10px;
+            border-width: 2px;
+            color: white;
+            margin-left: 50px;
+            text-align: center;
+            font-size: medium;
+            padding-top: 18px;
+            background-color: #4285f4;
+            cursor: pointer;
+        }
+
+        .secont-parent {
+            background-color: #f4ede4;
+        }
+
+        p {
+            color: white;
+        }
+
+        .bg-b {
+            color: black;
+            text-align: center;
+        }
+
+        .secont-child {
+            min-width: 1250px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .child-img {
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .w-100 {
+            width: 100%;
+            display: flex;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            background-color: #f4ede4;
+        }
+
+        .single-img {
+            width: 50%;
+        }
+
+        .right-part {
+            width: 50%;
+
+        }
+
+        .single-img img {
+            align-items: center;
+            margin-left: 50px;
+            width: 85%;
+        }
+
+        .right-part h2,
+        small,
+        a {
+            align-items: center;
+        }
+
+        .right-part h2 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.12;
+            letter-spacing: -.8px;
+            margin-left: 30px;
+        }
+
+        .right-part p {
+            color: black;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -.2px;
+            font-size: 25px;
+            margin-right: 100px;
+            margin-left: 35px;
+            margin-bottom: 0px;
+        }
+
+        .right-part a {
+            text-decoration: none;
+            margin-left: 39px;
+            font-size: 25px;
+        }
+
+        .buttons-2 {
+            text-align: center;
+            margin-top: 40px;
+
+        }
+
+        .full-bg {
+            padding: 14px 25px;
+            padding-bottom: 18px;
+            border: 0px solid #611f69;
+            border-radius: 10px;
+            border-width: 2px;
+            background-color: #611f69;
+            color: white;
+            margin-left: 50px;
+            text-align: center;
+        }
+
+        .no-bg {
+            padding: 14px 25px;
+            padding-bottom: 18px;
+            border: 0px solid black;
+            border-radius: 10px;
+            border-width: 2px;
+            color: #611f69;
+            margin-left: 50px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .bg-white {
+            background-color: white;
+            margin-top: 90px;
+        }
+
+        .ta-center-black h2 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: 0px;
+            line-height: -4px;
+        }
+
+        .ta-center-black p {
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .type-grid {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 200px;
+            padding-right: 150px;
+        }
+
+        .grid-item {
+            width: 200px;
+            text-align: left;
+            margin-top: 45px;
+        }
+
+        .grid-item h2 {
+            font-size: 64px;
+        }
+
+        .grid-item p {
+            font-size: 15px;
+            font-weight: 600;
+            width: 140px;
+            margin-top: -20px;
+            color: black;
+        }
+
+        .type-grid {
+            list-style-type: none;
+            margin-top: -35px;
+        }
+
+        .grid {
+            margin-top: 100px;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(244, 237, 228);
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+
+        .tk-cont h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .slack-grd {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .gd {
+            width: 280px;
+            background-color: white;
+            padding-top: 10px;
+        }
+
+        .grd-1 {
+            background-color: #611f69;
+            color: white;
+            padding-top: 20px;
+
+        }
+
+        .grd-1 p {
+            font-size: 14px;
+        }
+
+        .grd-1 h2 {
+            font-size: 20px;
+            text-align: left;
+            padding-left: 10px;
+
+        }
+
+        .grd-1 img {
+            margin-top: 70px;
+        }
+
+        .grd-1 h5 {
+            text-align: left;
+            margin-top: 50px;
+            padding-left: 10px;
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+
+        .gd p {
+            text-align: left;
+            padding-left: 10px;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        .gd h3 {
+            text-align: left;
+            padding-left: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 700;
+
+        }
+
+        .gd h4 {
+            text-align: left;
+            padding-left: 10px;
+            font-size: 14px;
+            color: rgb(18, 100, 163);
+            font-weight: 600;
+
+        }
+
+        .grd-2 h4 {
+            margin-top: 85px;
+        }
+
+        .grd-3 h4 {
+            margin-top: 85px;
+        }
+
+        .grd-4 h4 {
+            margin-top: 55px;
+        }
+
+        p,
+        strong {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: 1.1875;
+            letter-spacing: -.3px;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">
+            <h1>Great teamwork starts with a digital HQ</h1>
+            <p><strong>Slack is free to try</strong> for as long as you like</p>
+            <button class="button1">SIGN UP WITH EMAIL ADDRESS</button>
+            <button class="button2">SIGN UP WITH GOOGLE</button>
+        </div>
+        <div class="child2">
+            <img src="https://a.slack-edge.com/46ca242/marketing/img/homepage/mobile-focused/hero/hero-ui-android.png"
+                alt="loading" />
+        </div>
+    </div>
+    <div class="secont-parent">
+        <div class="secont-child">
+            <div class="child-p">
+                <p class="bg-b">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+            </div>
+            <div class="child-img">
+                <img src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png"
+                    alt="loading" />
+                <img src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png"
+                    alt="loading" />
+                <img src="https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png" alt="loading" />
+                <img src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png" alt="loading" />
+                <img src="https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm.png" alt="loading" />
+                <img src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png"
+                    alt="loading" />
+            </div>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="single-img">
+            <img class="ai-center"
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAQRYBSDAUElL97zSZqCEp_ROjyZw4WlEEWiykLNxz9AUA8LKD"
+                alt="loading" />
+        </div>
+        <div class="right-part">
+            <h2>Bring your team together </h2>
+            <p>At the heart of Slack are channerls: organised spaces of eeryone and everything that you need for
+                work. In channels, it's easier to connect across departments, offices, time zones and even other
+                companies. </p>
+            <br>
+            <a href="#"> Learn more about channels</a>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="ta-center-black">
+            <h2>Teams large and small rely on Slack</h2>
+            <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+            <div class="buttons-2">
+                <a href="#" class="full-bg">MEET SLACK FOR ENTERPRISE</a>
+                <a href="#" class="no-bg">TALK TO SALES</a>
+            </div>
+        </div>
+        <div>
+            <ul class="type-grid">
+                <li class="grid-item">
+                    <h2><span class="number-4x">85%</span></h2>
+                    <p>of users say that Slack has improved commuication<sup>*</sup></p>
+                </li>
+                <li class="grid-item">
+                    <h2><span class="number-64%">86%</span></h2>
+                    <p>feel that their ability to work remotely had improved<sup>*</sup></p>
+                </li>
+                <li class="grid-item">
+                    <h2><span class="number-2x">88%</span></h2>
+                    <p>feel more connected to their teams<sup>*</sup></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="tk-cont">
+                <h2>
+                    Take a deeper dive into a new way to work
+                </h2>
+                <div class="slack-grd">
+                    <div class="grd-1 gd">
+                        <p>Collection</p>
+                        <h2>Slack as your digital HQ</h2>
+                        <img src="https://a.slack-edge.com/891d9e5/marketing/img/digital-hq/promos/img-promo-01.png"
+                            alt="loading">
+                        <h5>SEE ALL</h5>
+                    </div>
+                    <div class="grd-2 gd">
+                        <img src="https://a.slack-edge.com/891d9e5/marketing/img/digital-hq/promos/img-promo-02.jpg"
+                            alt="loading">
+                        <p>Resource</p>
+                        <h3>See how others are building their digital HQ
+                        </h3>
+                        <h4>READ MORE
+                        </h4>
+                    </div>
+                    <div class="grd-3 gd">
+                        <img src="https://a.slack-edge.com/9fbc946/marketing/img/digital-hq/promos/img-promo-03.jpg"
+                            alt="loading">
+                        <p>Webinar</p>
+                        <h3>Embracing a digital-first approach to work</h3>
+                        <h4>WATCH NOW</h4>
+                    </div>
+                    <div class="grd-4 gd">
+                        <img src="https://a.slack-edge.com/9fbc946/marketing/img/digital-hq/promos/img-promo-04.jpg"
+                            alt="">
+
+                        <p>E-book</p>
+                        <h3>Reinventing work: new imperatives for the future of working
+                        </h3>
+                        <h4>GET E-BOOK</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
